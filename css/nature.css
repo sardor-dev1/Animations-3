@@ -1,5 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
 body {
     background-color: black;
+    font-family: sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+nav {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav__logo {
+    font-size: 40px;
+    font-weight: 600;
+    color: #F2AD43;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__item {
+    border: solid transparent;
+    background-color: #F2AD43;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.nav__item:hover {
+    background-color: transparent;
+    color: #F2AD43;
+    border-color: #F2AD43;
 }
 
 .nature-wrapp {
@@ -11,38 +60,38 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 11;
-    animation: sun-moon 20s infinite;
+    animation: sun-moon 30s infinite;
 }
 
 @keyframes sun-moon {
     0% {
-        background-color: #F2AD43;
-    }
-
-    25% {
-        background-color: rgb(78, 76, 76);
-    }
-
-    50% {
-        background-color: #F2AD43;
-    }
-
-    100% {
-        background-color: rgb(96, 94, 94);
-    }
-
-    0% {
         top: 80%;
     }
 
-    25% {
+    10% {
         top: 20%;
+        background-color: #F2AD43;
     }
 
-    75% {
+    30% {
         top: 20%;
+        background-color: #F2AD43;
     }
 
+    40% {
+        top: 80%;
+    }
+    50% {
+        top: 80%;
+    }
+    80% {
+        top: 20%;
+        background-color: rgb(96, 94, 94);
+    }
+    90% {
+        top: 20%;
+        background-color: rgb(96, 94, 94);
+    }
     100% {
         top: 80%;
     }
@@ -75,11 +124,10 @@ body {
     height: 100px;
     border-radius: 50%;
     position: absolute;
-    box-shadow: 5px orange;
     top: 50%;
     right: 40%;
     background-color: #FFF58F;
-    animation: sun 20s infinite;
+    animation: sun 30s infinite;
 }
 
 @keyframes sun {
@@ -87,27 +135,31 @@ body {
         top: 80%;
     }
 
-    20% {
+    10% {
         top: 20%;
+        background-color: #FFF58F;
+    }
+
+    30% {
+        top: 20%;
+        background-color: #FFF58F;
     }
 
     40% {
-        top: 20%;
-    }
-
-    50% {
         top: 80%;
     }
-    60% {
+    50% {
         top: 20%;
+        background-color: rgb(207, 205, 205);
     }
     80% {
-        top: 80%;
+        top: 20%;
+        background-color: rgb(207, 205, 205);
     }
     90% {
         top: 80%;
     }
-    1000% {
-        top: 20%;
+    100% {
+        top: 80%;
     }
 }

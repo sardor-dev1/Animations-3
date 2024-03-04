@@ -2,11 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
     background-color: black;
     overflow: hidden;
+    font-family: sans-serif;
+}
+
+
+a {
+    color: inherit;
+}
+
+nav {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav__logo {
+    font-size: 40px;
+    font-weight: 600;
+    color: blue;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__item {
+    border: solid transparent;
+    background-color: blue;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.nav__item:hover {
+    background-color: transparent;
+    color: blue;
+    border-color: blue;
 }
 
 .stairs-wrapp {

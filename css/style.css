@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
+
 
 .container {
     width: 95%;
@@ -11,13 +14,54 @@
 
 body {
     background-color: rgb(202, 70, 70);
+    font-family: sans-serif;
 }
+
+a {
+    color: inherit;
+}
+
+nav {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav__logo {
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__item {
+    border: solid transparent;
+    background-color: black;
+    color: rgb(202, 70, 70);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.nav__item:hover {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
 
 
 .anim-top {
     width: 200px;
     height: 100px;
-    margin: 70px auto 50px;
+    margin: 40px auto 50px;
     display: flex;
     align-items: center;
     animation: butterfly 0.5s 4 linear normal;
