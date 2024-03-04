@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.stairs-wrapp {
+    width: 400px;
+    height: 600px;
+    margin: 50px auto 0;
+    border-radius: 49% 49% 0 0;
+    background-color: blue;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    gap: 15px;
+
+    animation: wrapper 1.5s ease-in-out normal forwards;
+}
+
+@keyframes wrapper {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.2);
+        opacity: 1;
+        background-color: rgb(13, 13, 90);
+    }
+    100% {
+        transform: scale(1);
+        background-color: blue;
+    }
+}
+
+.stairs-wrapp div {
+    height: 10%;
+    background-color: black;
+}
+
+
+
+.stair__first {
+    width: 20%;
+    animation: stair-anim 1s 1 linear 2s normal forwards;
+}
+
+
+.stair__two {
+    width: 40%;
+    animation: stair-anim 1s 1 linear 3s normal forwards;
+}
+
+.stair__three {
+    width: 60%;
+    animation: stair-anim 1s 1 linear 4s normal forwards;
+}
+
+.stair__last {
+    width: 80%;
+    animation: stair-anim 1s 1 linear 5s normal forwards;
+}
+
+@keyframes stair-anim {
+    from {
+        transform: rotate(-180deg);
+        transform-origin: bottom right;
+        
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+}
+
+.nature-wrapp {
+    width: 28vw;
+    height: 75vh;
+    margin: 70px auto 0;
+    border-radius: 50% 50% 10% 10%;
+    background-color: #F2AD43;
+    position: relative;
+    overflow: hidden;
+    z-index: 11;
+    animation: sun-moon 20s infinite;
+}
+
+@keyframes sun-moon {
+    0% {
+        background-color: #F2AD43;
+    }
+
+    25% {
+        background-color: rgb(78, 76, 76);
+    }
+
+    50% {
+        background-color: #F2AD43;
+    }
+
+    100% {
+        background-color: rgb(96, 94, 94);
+    }
+
+    0% {
+        top: 80%;
+    }
+
+    25% {
+        top: 20%;
+    }
+
+    75% {
+        top: 20%;
+    }
+
+    100% {
+        top: 80%;
+    }
+}
+
+.semicircle-left {
+    position: absolute;
+    width: 95%;
+    height: 75%;
+    bottom: -25%;
+    left: -40%;
+    border-radius: 0 50% 50% 0;
+    background-color: #E08027;
+    z-index: 22;
+}
+
+.semicircle-right {
+    position: absolute;
+    width: 95%;
+    height: 75%;
+    bottom: -25%;
+    right: -35%;
+    border-radius: 50% 0 0 50%;
+    background: #824B20;
+    z-index: 44;
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 5px orange;
+    top: 50%;
+    right: 40%;
+    background-color: #FFF58F;
+    animation: sun 20s infinite;
+}
+
+@keyframes sun {
+    0% {
+        top: 80%;
+    }
+
+    20% {
+        top: 20%;
+    }
+
+    40% {
+        top: 20%;
+    }
+
+    50% {
+        top: 80%;
+    }
+    60% {
+        top: 20%;
+    }
+    80% {
+        top: 80%;
+    }
+    90% {
+        top: 80%;
+    }
+    1000% {
+        top: 20%;
+    }
+}
